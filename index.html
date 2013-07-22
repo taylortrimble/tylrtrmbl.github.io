@@ -3,7 +3,17 @@ title: Taylor Trimble
 layout: default
 ---
 
-<div id="blog-posts" data-spy="scroll" data-target="#nav">
+<div id="blog-posts">
     <h1>Latest Posts</h1>
+    {{ site.posts.first.content }}
+</div>
+
+<div id="projects">
+    <h1>Projects</h1>
+    {{ site.posts.first.content }}
+</div>
+
+<div id="about-me">
+    <h1>About Me</h1>
     {{ site.posts.first.content }}
 </div>

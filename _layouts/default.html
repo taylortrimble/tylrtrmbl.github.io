@@ -21,15 +21,15 @@
     <link rel="shortcut icon" href="favicon.ico">
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#sidebar">
 
     <div class="container">
         <div class="row-fluid">
         
-            <div class="span2 sidebar" data-spy="affix">
+            <div id="sidebar" class="span3">
                 <img src="img/taylor-face.png" class="img-rounded">
                 <h1>Taylor Trimble</h1>
-                <ul class="nav nav-pills nav-stacked affix-bottom">
+                <ul class="nav nav-pills nav-stacked">
                     <li><a href="#blog-posts">Blog Posts</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="http://twitter.com/tylrtrmbl">Twitter</a></li>
@@ -37,7 +37,7 @@
                 </ul>
             </div>
             
-            <div class="span9 offset3">
+            <div class="span9">
                 {{ content }}
             </div>
             
