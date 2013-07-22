@@ -10,6 +10,7 @@
     <!-- Le styles -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -24,14 +25,22 @@
 
     <div class="container">
         <div class="row-fluid">
-            <div class="span3 sidebar">
+        
+            <div class="span2 sidebar" data-spy="affix">
                 <img src="img/taylor-face.png" class="img-rounded">
                 <h1>Taylor Trimble</h1>
-                <h2>Blog</h2>
-                <h2>Projects</h2>
-                <h2>Twitter</h2>
-                <h2>About Me</h2>
+                <ul class="nav nav-pills nav-stacked affix-bottom">
+                    <li><a href="#blog-posts">Blog Posts</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="http://twitter.com/tylrtrmbl">Twitter</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                </ul>
             </div>
+            
+            <div class="span9 offset3">
+                {{ content }}
+            </div>
+            
         </div> <!-- /row-fluid -->
     </div> <!-- /container -->
 
