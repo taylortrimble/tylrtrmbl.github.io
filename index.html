@@ -1,13 +1,27 @@
 ---
 layout: default
-title: Your New Jekyll Site
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div id="posts">
+  <h3>Posts</h3>
+  {% for post in site.posts %}
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <br>
+  {% endfor %}
+</div>
+
+<div id="projects">
+    <h3>Projects</h3>
+    <a href="/lightshow">2011 and 2012 CSE Light Show</a><br>
+    <a href="/fido">Fido Workshop Automation System</a><br>
+    <a href="/abq">Animatronic Barbershop Quartet</a><br>
+    <a href="/rubensq">Ruben's Tube Quantized Audio Unit</a><br>
+</div>
+
+<div id="people-things">
+    <h3>People Things</h3>
+    I like to bike.<br>
+    I like to hike.<br>
+    I like to swim in lakes and streams.<br>
+    I sleep better on a couch than I do in a bed.<br>
 </div>
