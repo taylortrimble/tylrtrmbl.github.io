@@ -72,7 +72,7 @@ a:hover {
 
 /* Lighting Design */
 
-#lightbox {
+.lightbox {
   background: #111;
   color: #fff;
   width: 100%;
