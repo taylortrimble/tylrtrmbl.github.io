@@ -20,6 +20,7 @@ body {
 }
 
 p {
+  color: #111;
   margin: 0;
 }
 
@@ -43,7 +44,7 @@ a:hover {
 
 /* Major layout */
 
-#sidebar {
+.sidebar {
   position: fixed;
   width: 30%;
   height: 100%;
@@ -51,11 +52,11 @@ a:hover {
   padding: 4%;
 }
 
-#content {
+.content {
   position: absolute;
+  margin-left: 30%;
   width: 70%;
   min-height: 100%;
-  margin-left: 30%;
   padding: 4%;
 }
 
@@ -92,4 +93,15 @@ a:hover {
   color: #fff;
   -webkit-animation: darken both 3s 1s;
           animation: darken both 3s 1s;
+}
+
+.map {
+  height: 100%;
+  padding: 0;
+}
+
+/* Maps */
+
+#map-canvas {
+  height: 100%;
 }
