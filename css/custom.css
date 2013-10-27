@@ -90,7 +90,12 @@ a:hover {
 
 .lightbox {
   background: #111;
-  color: #fff;
+  -webkit-animation: darken both 3s 1s;
+          animation: darken both 3s 1s;
+}
+
+.lightbox p {
+  color: #eee;
   -webkit-animation: darken both 3s 1s;
           animation: darken both 3s 1s;
 }
