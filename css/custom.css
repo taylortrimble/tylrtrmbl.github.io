@@ -1,15 +1,120 @@
+/* General stylings */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+       -o-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
-  color: #000;
+  font-size: 150%;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
 }
 
-#masthead {
-  border-bottom: 3px solid #000;
+p {
+  color: #111;
+  margin: 0;
 }
 
-#masthead a {
-  color: #000;
+a {
+  text-decoration: none;
+  color: #777;
+  -webkit-transition: color 500ms;
+     -moz-transition: color 500ms;
+      -ms-transition: color 500ms;
+       -o-transition: color 500ms;
+          transition: color 500ms;
 }
 
-#masthead a:hover {
-  color: #000;
+a.no-color {
+  color: #111;
+}
+
+a:hover {
+  color: #f81c36;
+}
+
+/* Major layout */
+
+.sidebar {
+  position: fixed;
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  padding: 4%;
+}
+
+.content {
+  position: absolute;
+  margin-left: 30%;
+  width: 70%;
+  min-height: 100%;
+  padding: 4%;
+}
+
+/* Link colors */
+
+.twitter-link:hover {
+  color: #00aced;
+}
+
+.github-link:hover {
+  color: #4183c4;
+}
+
+#projects a:hover {
+  color: #1a80f7;
+}
+
+.lighting-link:hover {
+  color: #f8501c;
+}
+
+.map-link:hover {
+  color: #57ba1a;
+}
+
+/* Lighting Design */
+
+@keyframes darken {
+  0%   { background: #fff; color: #000; }
+  50%  { background: #111; color: #000; }
+  100% { background: #111; color: #fff; }
+}
+
+@-webkit-keyframes darken {
+  0%   { background: #fff; color: #000; }
+  50%  { background: #111; color: #000; }
+  100% { background: #111; color: #fff; }
+}
+
+.lightbox {
+  background: #111;
+  -webkit-animation: darken both 1.5s 1s ease;
+          animation: darken both 1.5s 1s ease;
+}
+
+.lightbox p {
+  color: #eee;
+  -webkit-animation: darken both 1.5s 1s ease;
+          animation: darken both 1.5s 1s ease;
+}
+
+.map {
+  height: 100%;
+  padding: 0;
+}
+
+/* Maps */
+
+#map-canvas {
+  height: 100%;
 }
