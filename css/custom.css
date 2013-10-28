@@ -62,11 +62,11 @@ a:hover {
 
 /* Link colors */
 
-#twitter:hover {
+.twitter-link:hover {
   color: #00aced;
 }
 
-#github:hover {
+.github-link:hover {
   color: #4183c4;
 }
 
@@ -74,30 +74,38 @@ a:hover {
   color: #1a80f7;
 }
 
+.lighting-link:hover {
+  color: #f8501c;
+}
+
+.map-link:hover {
+  color: #57ba1a;
+}
+
 /* Lighting Design */
 
 @keyframes darken {
   0%   { background: #fff; color: #000; }
-  30%  { background: #111; color: #000; }
+  50%  { background: #111; color: #000; }
   100% { background: #111; color: #fff; }
 }
 
 @-webkit-keyframes darken {
   0%   { background: #fff; color: #000; }
-  30%  { background: #111; color: #000; }
+  50%  { background: #111; color: #000; }
   100% { background: #111; color: #fff; }
 }
 
 .lightbox {
   background: #111;
-  -webkit-animation: darken both 3s 1s;
-          animation: darken both 3s 1s;
+  -webkit-animation: darken both 1.5s 1s ease;
+          animation: darken both 1.5s 1s ease;
 }
 
 .lightbox p {
   color: #eee;
-  -webkit-animation: darken both 3s 1s;
-          animation: darken both 3s 1s;
+  -webkit-animation: darken both 1.5s 1s ease;
+          animation: darken both 1.5s 1s ease;
 }
 
 .map {
