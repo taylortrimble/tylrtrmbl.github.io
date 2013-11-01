@@ -1,27 +1,42 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Taylor Trimble's personal website, coming Thanksgiving 2013.">
+    <meta name="author" content="Taylor Trimble">
+    
+    <title>Taylor Trimble</title>
+    
+    <style>
+    .front-and-center {
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    .front-and-center p {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 150%;
+        margin: 20px 0;
+    }
+    
+    .front-and-center img {
+        margin-bottom: 10px;
+    }
+    </style>
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
 
-<div id="posts">
-  <h3>Posts</h3>
-  {% for post in site.posts %}
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <br>
-  {% endfor %}
-</div>
+<body>
+    <div class="front-and-center">
+      <img src="pixelturkey.png" alt="pixelated turkey">
+      <p>Coming this</p>
+      <p>Thanksgiving,</p>
+      <p>2013</p>
+    </div>
+</body>
 
-<div id="projects">
-    <h3>Projects</h3>
-    <a href="/lightshow">2011 and 2012 CSE Light Show</a><br>
-    <a href="/fido">Fido Workshop Automation System</a><br>
-    <a href="/abq">Animatronic Barbershop Quartet</a><br>
-    <a href="/rubensq">Ruben's Tube Quantized Audio Unit</a><br>
-</div>
-
-<div id="people-things">
-    <h3>People Things</h3>
-    I like to bike.<br>
-    I like to hike.<br>
-    I like to swim in lakes and streams.<br>
-    I sleep better on a couch than I do in a bed.<br>
-</div>
+</html>
