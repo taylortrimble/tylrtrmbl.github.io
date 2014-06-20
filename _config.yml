@@ -1,6 +1,7 @@
 # Site settings
 title: Taylor Trimble
 email: taylor@taylortrimble.com
+username: tylrtrmbl
 description: "Taylor's minimum viable blog."
 baseurl: ""
 url: "http://taylortrimble.com"
